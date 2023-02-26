@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+#loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+
+#loading * {
+    text-align: center !important;
+}
+
+.start-logo img {
+    width: 200px;
+}
+
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loading {
+    transition: 1s;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.body {
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/oboi.jpg);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 15px;
+}
+
+.body img {
+    width: 80px;
+    height: 80px;
+}
+
+.alarm a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.alarm b {  
+    color: black;
+    text-align: center !important;
+}
+
+@media (max-width : 400px) {
+    .body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+@media (max-width : 300px) {
+    .body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .body * {
+        text-align: center;
+    }
+    
+}
